@@ -12,4 +12,4 @@ $ cd weather-pwa
 $ http-server ./ -o
 ```
 
-**Note** Python server logs unrecognized mime type error when working with **service worker**, so rather use `http-server`
+**Note** Python server logs unrecognized mime type error when working with **service worker**, so its best to use `http-server`
