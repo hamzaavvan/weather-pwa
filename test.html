@@ -1,0 +1,49 @@
+  <link rel="stylesheet" href="styles/base.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="ptr">
+    <!-- Pull down arrow indicator -->
+<span class="genericon genericon-next"></span>
+
+<!-- CSS-based loading indicator -->
+<div class="loading">
+    <span id="l1"></span>
+    <span id="l2"></span>
+    <span id="l3"></span>
+</div>
+</div>
+
+<div id="content">
+    <p>asdasd</p>
+    <p>asdasdxxzxz</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+    <p>asdasd</p>
+</div>
+
+<script src="scripts/hammer.min.js"></script>
+<script src="scripts/wptr.js"></script>
+
+<script>
+  window.onload = function() {
+    WebPullToRefresh.init( {
+      loadingFunction: () => {
+        return new Promise( function( resolve, reject ) {
+          // Run some async loading code here
+
+          if ( true ) {
+            resolve(true);
+          } else {
+            reject(false);
+          }
+        } );
+      }
+    } );
+  };
+</script>
