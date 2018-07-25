@@ -11,3 +11,5 @@ To run the app use `http-server`
 $ cd weather-pwa
 $ http-server ./ -o
 ```
+
+**Note** Python server logs unrecognized mime type error, so rather use `http-server`
